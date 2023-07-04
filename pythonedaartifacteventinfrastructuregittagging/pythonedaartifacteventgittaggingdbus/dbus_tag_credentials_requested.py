@@ -38,14 +38,16 @@ class DbusTagCredentialsRequested(ServiceInterface):
         """
         Creates a new DbusTagCredentialsRequested.
         """
-        super().__init__('pythonedaartifactgittagging.TagCredentialsRequested')
+        super().__init__('pythonedaartifactgittagging_TagCredentialsRequested')
 
     @signal()
-    def TagCredentialsRequested(self, message: 's'):
+    def TagCredentialsRequested(self, repository_url: 's', branch: 's'):
         """
         Defines the TagCredentialsRequested d-bus signal.
-        :param message: A message.
-        :type message: str
+        :param repository_url: The repository URL.
+        :type repository_url: str
+        :param branch: The branch.
+        :type branch: str
         """
         pass
 

@@ -38,7 +38,7 @@ class DbusTagCredentialsProvided(ServiceInterface):
         """
         Creates a new DbusTagCredentialsProvided.
         """
-        super().__init__('pythonedaartifactgittagging.TagCredentialsProvided')
+        super().__init__('pythonedaartifactgittagging_TagCredentialsProvided')
 
     @signal()
     def TagCredentialsProvided(self, message: 's'):
